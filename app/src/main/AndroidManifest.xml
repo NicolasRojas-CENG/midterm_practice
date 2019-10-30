@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.Launcher">
-        <activity android:name=".date_screen"/>
-        <activity android:name=".main_screen" />
+        <activity android:name=".date_screen"
+            android:parentActivityName=".main_screen"/>
+        <activity android:name=".main_screen"
+            android:parentActivityName=".MainActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

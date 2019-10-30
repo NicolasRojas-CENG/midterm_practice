@@ -1,5 +1,6 @@
 package com.test;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
@@ -18,6 +19,8 @@ public class date_screen extends AppCompatActivity /*implements DatePickerDialog
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_date_screen);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("Date selector");
         Button goBack = findViewById(R.id.goBack);
         final DatePicker datePicker = findViewById(R.id.datePicker);
         Button setDate = findViewById(R.id.dateButton);

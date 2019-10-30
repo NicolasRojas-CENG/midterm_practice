@@ -1,5 +1,6 @@
 package com.test;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
@@ -26,6 +27,8 @@ public class main_screen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_screen);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("Main screen");
         Button goBack =findViewById(R.id.goBack);
         goBack.setOnClickListener(new View.OnClickListener() {
             @Override

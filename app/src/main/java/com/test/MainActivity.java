@@ -63,9 +63,10 @@ public class MainActivity extends AppCompatActivity{
                 Toast.makeText(getApplicationContext(), "Exiting app.", Toast.LENGTH_SHORT).show();
                 finishAndRemoveTask();
                 return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
 
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 }
 
